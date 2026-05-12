@@ -1,0 +1,9 @@
+.next
+node_modules
+.tools
+next-dev.log
+preview-*.png
+out
+dist
+*.log
+.env*
