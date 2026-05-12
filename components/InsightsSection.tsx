@@ -1,13 +1,10 @@
 import { SectionHeader } from "@/components/SectionHeader";
+import { assetPath } from "@/lib/asset-path";
 import { siteContent } from "@/lib/source-content";
 import Image from "next/image";
 
 type Post = (typeof siteContent.analysis.posts)[number];
 type InsightFigure = Post["figures"][number];
-
-function assetSrc(path: string) {
-  return path.startsWith("/") ? path : `/${path}`;
-}
 
 function InsightFigurePanel({
   figure,
@@ -24,7 +21,7 @@ function InsightFigurePanel({
       <div className="grid aspect-[4/3] place-items-center overflow-hidden rounded-[14px] border border-black/[0.06] bg-[#fbfbfb] p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.95)]">
         {image ? (
           <Image
-            src={assetSrc(image)}
+            src={assetPath(image)}
             alt={label}
             width={640}
             height={480}

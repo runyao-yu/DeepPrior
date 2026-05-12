@@ -1,3 +1,4 @@
+import { assetPath } from "@/lib/asset-path";
 import { heroVideo } from "@/lib/content";
 
 function inferredVideoType(src: string) {
@@ -17,6 +18,9 @@ export function HeroBackgroundVideo() {
     return null;
   }
 
+  const videoSrc = assetPath(heroVideo.src);
+  const posterSrc = heroVideo.poster ? assetPath(heroVideo.poster) : undefined;
+
   return (
     <video
       className="pointer-events-none absolute inset-0 z-[1] h-full w-full"
@@ -25,7 +29,7 @@ export function HeroBackgroundVideo() {
       loop
       playsInline
       preload="metadata"
-      poster={heroVideo.poster || undefined}
+      poster={posterSrc}
       aria-hidden="true"
       style={{
         objectFit: heroVideo.fit,
@@ -34,7 +38,7 @@ export function HeroBackgroundVideo() {
         filter: "grayscale(1) contrast(0.92) brightness(1.08)",
       }}
     >
-      <source src={heroVideo.src} type={inferredVideoType(heroVideo.src)} />
+      <source src={videoSrc} type={inferredVideoType(heroVideo.src)} />
     </video>
   );
 }

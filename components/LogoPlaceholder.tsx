@@ -1,10 +1,11 @@
+import { assetPath } from "@/lib/asset-path";
 import Image from "next/image";
 
 export function LogoPlaceholder() {
   return (
     <div className="flex min-w-0 items-center gap-3">
       <Image
-        src="/Figure/D.png"
+        src={assetPath("/Figure/D.png")}
         alt="DeepPrior logo"
         width={32}
         height={32}

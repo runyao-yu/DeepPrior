@@ -1,5 +1,6 @@
 import { CopyCitationButton } from "@/components/CopyCitationButton";
 import { SectionHeader } from "@/components/SectionHeader";
+import { assetPath } from "@/lib/asset-path";
 import { siteContent } from "@/lib/source-content";
 import Image from "next/image";
 
@@ -11,10 +12,6 @@ const researchLinks = [
   ["dataUrl", "Data"],
   ["codeUrl", "Code"],
 ] as const;
-
-function assetSrc(path: string) {
-  return path.startsWith("/") ? path : `/${path}`;
-}
 
 function FigurePanel({
   figure,
@@ -31,7 +28,7 @@ function FigurePanel({
       <div className="grid aspect-[4/3] place-items-center overflow-hidden rounded-[16px] border border-black/[0.06] bg-[#fbfbfb] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.95)]">
         {image ? (
           <Image
-            src={assetSrc(image)}
+            src={assetPath(image)}
             alt={label}
             width={900}
             height={675}
