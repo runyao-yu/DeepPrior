@@ -149,6 +149,137 @@ button {
   animation: committee-card-reveal 1150ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+.committee-column-window {
+  --committee-card-height: 316px;
+  --committee-card-gap: 1rem;
+  height: calc(
+    var(--committee-card-height) + var(--committee-card-height) +
+      var(--committee-card-gap)
+  );
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 7%,
+    #000 93%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 7%,
+    #000 93%,
+    transparent 100%
+  );
+}
+
+.committee-column-track {
+  animation: committee-scroll-up 46s linear infinite;
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+.committee-column-track[data-direction="down"] {
+  animation-name: committee-scroll-down;
+}
+
+.committee-column-window:hover .committee-column-track {
+  animation-play-state: paused;
+}
+
+.committee-column-stack {
+  display: grid;
+  gap: var(--committee-card-gap);
+  padding-bottom: var(--committee-card-gap);
+}
+
+.committee-member-card {
+  height: var(--committee-card-height);
+}
+
+.committee-logo-track {
+  animation-duration: 26s;
+}
+
+.committee-logo-stack {
+  display: grid;
+  gap: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.committee-logo-item {
+  height: 150px;
+}
+
+.committee-logo-image {
+  height: auto;
+  max-height: 111px;
+  max-width: 97%;
+  width: auto;
+}
+
+.research-carousel-stage {
+  height: clamp(35rem, 62vw, 45rem);
+  perspective: 1500px;
+  perspective-origin: 50% 36%;
+}
+
+.research-carousel-card {
+  backface-visibility: hidden;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(calc(-50% + var(--offset-x)))
+    translateZ(var(--translate-z)) rotateY(var(--rotate-y))
+    scale(var(--scale));
+  transform-style: preserve-3d;
+  transition-duration: 760ms;
+  transition-property: opacity, filter, transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  width: clamp(12rem, 20vw, 21rem);
+  will-change: transform, opacity;
+}
+
+.research-paper-shot {
+  aspect-ratio: 3 / 4;
+}
+
+.research-paper-title,
+.research-paper-authors {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.research-paper-title {
+  -webkit-line-clamp: 3;
+}
+
+.research-paper-authors {
+  -webkit-line-clamp: 3;
+}
+
+.research-paper-venue {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.insight-card {
+  width: clamp(20rem, 42vw, 38rem);
+}
+
+.insights-scroller {
+  scrollbar-width: none;
+}
+
+.insights-scroller::-webkit-scrollbar {
+  display: none;
+}
+
 .contact-marquee {
   overflow: hidden;
   padding: clamp(0.25rem, 1vw, 0.75rem) 0 clamp(1.75rem, 4vw, 3.5rem);
@@ -160,6 +291,7 @@ button {
   gap: clamp(4rem, 10vw, 10rem);
   width: max-content;
   animation: contact-marquee 34s linear infinite;
+  animation-direction: reverse;
   will-change: transform;
 }
 
@@ -252,6 +384,26 @@ button {
   }
 }
 
+@keyframes committee-scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes committee-scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes contact-marquee {
   0% {
     transform: translateX(0);
@@ -303,6 +455,7 @@ button {
   .section-rise,
   .section-title-rise,
   .committee-card-reveal,
+  .committee-column-track,
   .contact-marquee-track,
   .divider-flash {
     animation: none;
