@@ -10,18 +10,8 @@ function normalizeBasePath(path?: string) {
     : `/${withoutTrailingSlash}`;
 }
 
-function githubPagesBasePath() {
-  if (process.env.GITHUB_ACTIONS !== "true") {
-    return "";
-  }
-
-  const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
-
-  return repositoryName ? `/${repositoryName}` : "";
-}
-
 export const siteBasePath = normalizeBasePath(
-  process.env.NEXT_PUBLIC_BASE_PATH ?? githubPagesBasePath()
+  process.env.NEXT_PUBLIC_BASE_PATH
 );
 
 export function assetPath(path: string) {

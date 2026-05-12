@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
-const githubPagesBasePath =
-  process.env.GITHUB_ACTIONS === "true" && repositoryName
-    ? `/${repositoryName}`
-    : "";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? githubPagesBasePath;
+const isGitHubActions = process.env.GITHUB_ACTIONS === "true";
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig = {
-  ...(basePath
+  ...(configuredBasePath
     ? {
-        basePath,
-        assetPrefix: `${basePath}/`,
+        basePath: configuredBasePath,
+        assetPrefix: `${configuredBasePath}/`,
+      }
+    : {}),
+  ...(isGitHubActions
+    ? {
         output: "export",
         trailingSlash: true,
       }
@@ -18,7 +18,7 @@ const nextConfig = {
   devIndicators: false,
   allowedDevOrigins: ["127.0.0.1"],
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH: configuredBasePath,
   },
   images: {
     unoptimized: true,
