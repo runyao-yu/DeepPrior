@@ -17,7 +17,7 @@
     eyebrow: "Committee",
     title: "DeepPrior",
     description:
-      "At DeepPrior, we are an international and diverse team of researchers from prestigious universities.",
+      "At DeepPrior, we are an international and diverse team of researchers from prestigious institutes.",
     members: [
       {
         name: "Runyao Yu",
