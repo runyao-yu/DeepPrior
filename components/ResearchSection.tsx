@@ -43,7 +43,7 @@ function PaperScreenshot({
           width={900}
           height={1200}
           unoptimized
-          className="h-full w-full object-cover object-top"
+          className="h-full w-full object-contain object-top"
           loading="lazy"
         />
       ) : (
@@ -67,6 +67,22 @@ function PaperScreenshot({
       className="block rounded-[16px] outline-none transition focus-visible:ring-2 focus-visible:ring-black/30"
     >
       {content}
+    </a>
+  );
+}
+
+function ResourceTag({ href, label }: { href: string; label: string }) {
+  const tagClassName =
+    "rounded-full border border-black/[0.1] bg-white px-3.5 py-2 text-[12px] font-semibold text-black/56 transition";
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={`${tagClassName} hover:border-black/20 hover:text-black`}
+    >
+      {label}
     </a>
   );
 }
@@ -115,26 +131,8 @@ function ResearchCard({
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {paper.dataUrl ? (
-            <a
-              href={paper.dataUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-black/[0.1] bg-white px-3.5 py-2 text-[12px] font-semibold text-black/56 transition hover:border-black/20 hover:text-black"
-            >
-              Data
-            </a>
-          ) : null}
-          {paper.codeUrl ? (
-            <a
-              href={paper.codeUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-black/[0.1] bg-white px-3.5 py-2 text-[12px] font-semibold text-black/56 transition hover:border-black/20 hover:text-black"
-            >
-              Code
-            </a>
-          ) : null}
+          {paper.dataUrl ? <ResourceTag href={paper.dataUrl} label="Data" /> : null}
+          {paper.codeUrl ? <ResourceTag href={paper.codeUrl} label="Code" /> : null}
           <CopyCitationButton text={paper.bibtex} />
         </div>
       </div>
@@ -143,7 +141,9 @@ function ResearchCard({
 }
 
 export function ResearchSection() {
-  const papers = siteContent.research.papers;
+  const papers = siteContent.research.papers.filter((paper) =>
+    paper.figures[0]?.image?.startsWith("Figure/Research/Covers/"),
+  );
   const [activePosition, setActivePosition] = useState(0);
   const lastRotateAt = useRef(0);
 

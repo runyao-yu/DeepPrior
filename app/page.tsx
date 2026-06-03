@@ -7,6 +7,7 @@ import { HeroTitle } from "@/components/HeroTitle";
 import { InsightsSection } from "@/components/InsightsSection";
 import { Navbar } from "@/components/Navbar";
 import { ResearchSection } from "@/components/ResearchSection";
+import { INSIGHTS } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       </HeroShell>
       <CommitteeSection />
       <ResearchSection />
-      <InsightsSection />
+      {INSIGHTS ? <InsightsSection /> : null}
       <ContactSection />
     </main>
   );

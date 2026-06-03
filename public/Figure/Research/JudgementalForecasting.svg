@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Judgemental and statistical interaction">
+  <defs>
+    <style>
+      .bg{fill:#fbfbfb}.paper{fill:#fff;stroke:#000;stroke-opacity:.08;stroke-width:2}.grid{stroke:#000;stroke-opacity:.055;stroke-width:1}.kicker{font-family:Bahnschrift,Segoe UI,sans-serif;font-size:22px;font-weight:700;letter-spacing:2px;fill:#000;fill-opacity:.42}.title{font-family:Bahnschrift,Segoe UI,sans-serif;font-size:52px;font-weight:700;fill:#050505}.label{font-family:Bahnschrift,Segoe UI,sans-serif;font-size:24px;font-weight:600;fill:#000;fill-opacity:.45}.line{fill:none;stroke:#050505;stroke-width:12;stroke-linecap:round}.muted{stroke-opacity:.22}.thin{fill:none;stroke:#050505;stroke-opacity:.18;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.dashed{stroke-dasharray:12 18}.node,.bar,.box,.dot{fill:#050505;fill-opacity:.08;stroke:#050505;stroke-opacity:.18;stroke-width:3}.dark{fill-opacity:.78;stroke-opacity:.08}.venn{fill:#050505;fill-opacity:.06;stroke:#050505;stroke-opacity:.18;stroke-width:4}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="1200"/>
+  <rect class="paper" x="58" y="58" width="784" height="1084" rx="34"/>
+  <path class="grid" d="M112 268 H788"/>
+  <path class="grid" d="M112 352 H788"/>
+  <path class="grid" d="M112 436 H788"/>
+  <path class="grid" d="M112 520 H788"/>
+  <path class="grid" d="M112 604 H788"/>
+  <path class="grid" d="M112 688 H788"/>
+  <path class="grid" d="M112 772 H788"/>
+  <path class="grid" d="M112 856 H788"/>
+  <text x="112" y="158" class="kicker">FORECASTING METHODS</text>
+  <text x="112" y="238" class="title">Judgemental and statistical int</text><text x="112" y="300" class="title">eraction</text>
+  <g><circle cx="390" cy="592" r="152" class="venn"/><circle cx="512" cy="592" r="152" class="venn dark"/>
+<path d="M208 796 C336 712 544 880 692 704" class="line"/><circle cx="450" cy="592" r="48" class="node"/></g>
+  <text x="176" y="1022" text-anchor="middle" class="label">judgement</text>
+<text x="432" y="1022" text-anchor="middle" class="label">model</text>
+<text x="688" y="1022" text-anchor="middle" class="label">decision</text>
+</svg>

@@ -117,7 +117,7 @@ export function HeroBackgroundVideo({
       video.currentTime = 0;
       void video.play();
       replayTimerRef.current = null;
-    }, 2000);
+    }, 1000);
   }
 
   return (

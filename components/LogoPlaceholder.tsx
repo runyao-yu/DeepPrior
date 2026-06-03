@@ -3,18 +3,15 @@ import Image from "next/image";
 
 export function LogoPlaceholder() {
   return (
-    <div className="flex min-w-0 items-center gap-3">
+    <div className="grid h-[56px] w-[56px] shrink-0 place-items-center overflow-hidden rounded-[10px] border border-black/[0.08] bg-[#eceef1]/85 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
       <Image
         src={assetPath("/Figure/D.png")}
         alt="DeepPrior logo"
-        width={32}
-        height={32}
+        width={56}
+        height={56}
         unoptimized
-        className="h-8 w-8 shrink-0 object-contain"
+        className="h-full w-full object-cover"
       />
-      <span className="truncate text-[15px] font-semibold leading-none text-black/85 md:text-base">
-        DeepPrior
-      </span>
     </div>
   );
 }

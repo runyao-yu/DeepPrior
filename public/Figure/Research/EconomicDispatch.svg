@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Hybrid PSO with mutation">
+  <defs>
+    <style>
+      .bg{fill:#fbfbfb}.paper{fill:#fff;stroke:#000;stroke-opacity:.08;stroke-width:2}.grid{stroke:#000;stroke-opacity:.055;stroke-width:1}.kicker{font-family:Bahnschrift,Segoe UI,sans-serif;font-size:22px;font-weight:700;letter-spacing:2px;fill:#000;fill-opacity:.42}.title{font-family:Bahnschrift,Segoe UI,sans-serif;font-size:52px;font-weight:700;fill:#050505}.label{font-family:Bahnschrift,Segoe UI,sans-serif;font-size:24px;font-weight:600;fill:#000;fill-opacity:.45}.line{fill:none;stroke:#050505;stroke-width:12;stroke-linecap:round}.muted{stroke-opacity:.22}.thin{fill:none;stroke:#050505;stroke-opacity:.18;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.dashed{stroke-dasharray:12 18}.node,.bar,.box,.dot{fill:#050505;fill-opacity:.08;stroke:#050505;stroke-opacity:.18;stroke-width:3}.dark{fill-opacity:.78;stroke-opacity:.08}.venn{fill:#050505;fill-opacity:.06;stroke:#050505;stroke-opacity:.18;stroke-width:4}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="1200"/>
+  <rect class="paper" x="58" y="58" width="784" height="1084" rx="34"/>
+  <path class="grid" d="M112 268 H788"/>
+  <path class="grid" d="M112 352 H788"/>
+  <path class="grid" d="M112 436 H788"/>
+  <path class="grid" d="M112 520 H788"/>
+  <path class="grid" d="M112 604 H788"/>
+  <path class="grid" d="M112 688 H788"/>
+  <path class="grid" d="M112 772 H788"/>
+  <path class="grid" d="M112 856 H788"/>
+  <text x="112" y="158" class="kicker">ECONOMIC DISPATCH</text>
+  <text x="112" y="254" class="title">Hybrid PSO with mutation</text>
+  <g><circle cx="172" cy="408" r="18" class="dot dark"/>
+<circle cx="229" cy="491" r="10" class="dot"/>
+<circle cx="286" cy="574" r="10" class="dot"/>
+<circle cx="343" cy="657" r="10" class="dot"/>
+<circle cx="400" cy="740" r="10" class="dot"/>
+<circle cx="457" cy="433" r="18" class="dot"/>
+<circle cx="514" cy="516" r="10" class="dot dark"/>
+<circle cx="571" cy="599" r="10" class="dot"/>
+<circle cx="628" cy="682" r="10" class="dot"/>
+<circle cx="685" cy="765" r="10" class="dot"/>
+<circle cx="182" cy="458" r="18" class="dot"/>
+<circle cx="239" cy="541" r="10" class="dot"/>
+<circle cx="296" cy="624" r="10" class="dot dark"/>
+<circle cx="353" cy="707" r="10" class="dot"/>
+<circle cx="410" cy="790" r="10" class="dot"/>
+<circle cx="467" cy="483" r="18" class="dot"/>
+<circle cx="524" cy="566" r="10" class="dot"/>
+<circle cx="581" cy="649" r="10" class="dot"/>
+<path d="M160 820 C286 700 382 750 482 602 C590 442 678 484 752 350" class="line"/></g>
+  <text x="176" y="1022" text-anchor="middle" class="label">particles</text>
+<text x="432" y="1022" text-anchor="middle" class="label">mutation</text>
+<text x="688" y="1022" text-anchor="middle" class="label">dispatch</text>
+</svg>

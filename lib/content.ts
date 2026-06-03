@@ -1,7 +1,11 @@
+export const INSIGHTS = false;
+
 export const navItems = [
   { label: "Committee", href: "#committee", active: false },
   { label: "Research", href: "#research", active: true },
-  { label: "Insights", href: "#insights", active: false },
+  ...(INSIGHTS
+    ? [{ label: "Insights", href: "#insights", active: false }]
+    : []),
 ] as const;
 
 export const heroVideo = {

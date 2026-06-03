@@ -17,7 +17,7 @@ export function HeroShell({ children }: HeroShellProps) {
   );
 
   useEffect(() => {
-    const duration = 2400;
+    const duration = 1680;
     const startedAt = window.performance.now();
     const intervalId = window.setInterval(() => {
       const elapsed = window.performance.now() - startedAt;

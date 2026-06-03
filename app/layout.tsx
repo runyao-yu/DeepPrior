@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "DeepPrior is a quantitative AI research organization for energy markets and power systems.",
   icons: {
-    icon: [{ url: assetPath("/Figure/D.png?v=2"), type: "image/png" }],
+    icon: [{ url: assetPath("/Figure/D.png?v=3"), type: "image/png" }],
   },
 };
 
