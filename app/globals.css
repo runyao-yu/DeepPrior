@@ -175,18 +175,9 @@ button {
 }
 
 .committee-column-track {
-  animation: committee-scroll-up 46s linear infinite;
   display: flex;
   flex-direction: column;
   will-change: transform;
-}
-
-.committee-column-track[data-direction="down"] {
-  animation-name: committee-scroll-down;
-}
-
-.committee-column-window:hover .committee-column-track {
-  animation-play-state: paused;
 }
 
 .committee-column-stack {
@@ -197,10 +188,6 @@ button {
 
 .committee-member-card {
   height: var(--committee-card-height);
-}
-
-.committee-logo-track {
-  animation-duration: 26s;
 }
 
 .committee-logo-stack {

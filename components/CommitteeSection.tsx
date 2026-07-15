@@ -1,4 +1,5 @@
 import { SectionHeader } from "@/components/SectionHeader";
+import { CommitteeScroller } from "@/components/CommitteeScroller";
 import { assetPath } from "@/lib/asset-path";
 import { siteContent } from "@/lib/source-content";
 import Image from "next/image";
@@ -147,27 +148,21 @@ function CommitteeColumn({
       <h3 className="m-0 text-[13px] font-semibold uppercase text-black/38">
         {title} ({members.length})
       </h3>
-      <div className="committee-column-window">
-        <div
-          className="committee-column-track"
-          data-direction={direction}
-          aria-live="off"
-        >
-          {[0, 1].map((setIndex) => (
-            <div
-              key={`${title}-${setIndex}`}
-              className="committee-column-stack"
-            >
-              {members.map((member) => (
-                <MemberCard
-                  key={`${title}-${setIndex}-${member.name}-${member.role}`}
-                  member={member}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      <CommitteeScroller direction={direction}>
+        {[0, 1].map((setIndex) => (
+          <div
+            key={`${title}-${setIndex}`}
+            className="committee-column-stack"
+          >
+            {members.map((member) => (
+              <MemberCard
+                key={`${title}-${setIndex}-${member.name}-${member.role}`}
+                member={member}
+              />
+            ))}
+          </div>
+        ))}
+      </CommitteeScroller>
     </div>
   );
 }
@@ -178,38 +173,32 @@ function LogoColumn() {
       <h3 className="m-0 text-center text-[13px] font-semibold uppercase text-black/38">
         Institutes ({universityLogos.length})
       </h3>
-      <div className="committee-column-window">
-        <div
-          className="committee-column-track committee-logo-track"
-          data-direction="up"
-          aria-live="off"
-        >
-          {[0, 1].map((setIndex) => (
-            <div
-              key={`logos-${setIndex}`}
-              className="committee-logo-stack"
-              aria-hidden={setIndex === 1}
-            >
-              {universityLogos.map((logo) => (
-                <div
-                  key={`${setIndex}-${logo.name}`}
-                  className="committee-logo-item grid place-items-center"
-                >
-                  <Image
-                    src={assetPath(logo.image)}
-                    alt={logo.name}
-                    width={360}
-                    height={180}
-                    unoptimized
-                    className="committee-logo-image object-contain"
-                    loading="eager"
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      <CommitteeScroller direction="up" speed={36}>
+        {[0, 1].map((setIndex) => (
+          <div
+            key={`logos-${setIndex}`}
+            className="committee-logo-stack"
+            aria-hidden={setIndex === 1}
+          >
+            {universityLogos.map((logo) => (
+              <div
+                key={`${setIndex}-${logo.name}`}
+                className="committee-logo-item grid place-items-center"
+              >
+                <Image
+                  src={assetPath(logo.image)}
+                  alt={logo.name}
+                  width={360}
+                  height={180}
+                  unoptimized
+                  className="committee-logo-image object-contain"
+                  loading="eager"
+                />
+              </div>
+            ))}
+          </div>
+        ))}
+      </CommitteeScroller>
     </div>
   );
 }

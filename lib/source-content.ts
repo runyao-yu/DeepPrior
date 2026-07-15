@@ -359,6 +359,31 @@
         ],
       },
       {
+        title: "A Market-Rule-Informed Neural Network for Efficient Imbalance Electricity Price Forecasting",
+        authors: "Runyao Yu, Julia Lin, Derek W. Bunn, Jochen Stiasny, Wentao Wang, Yujie Chen, Tara Esterl, Peter Palensky, Jochen L. Cremer",
+        abstract: "A market-rule-informed neural network that embeds imbalance-price formation rules in a learned latent space for accurate, efficient, and operationally robust probabilistic forecasting.",
+        journal: "Advanced Engineering Informatics",
+        year: "2026",
+        paperUrl: "https://arxiv.org/pdf/2605.09061",
+        dataUrl: "https://github.com/runyao-yu/MRINN/tree/main/Data",
+        codeUrl: "https://github.com/runyao-yu/MRINN",
+        bibtex: `@article{yu2026mrinn,
+  title={A Market-Rule-Informed Neural Network for Efficient Imbalance Electricity Price Forecasting},
+  author={Yu, Runyao and Lin, Julia and Bunn, Derek W. and Stiasny, Jochen and Wang, Wentao and Chen, Yujie and Esterl, Tara and Palensky, Peter and Cremer, Jochen L.},
+  journal={Advanced Engineering Informatics},
+  year={2026},
+  eprint={2605.09061},
+  archivePrefix={arXiv},
+  url={https://arxiv.org/abs/2605.09061}
+}`,
+        figures: [
+          {
+            title: "Structure of MRINN",
+            image: "Figure/Research/Covers/mrinn.png",
+          },
+        ],
+      },
+      {
         title: "Adapting to Drift: Weather-Pattern Experts for Short-Term Photovoltaic Power Forecasting",
         authors: "Wentao Wang, Haiyan Lu, Ayesha Ubaid, Fanyi Yang, Runyao Yu, Jianzhou Wang",
         abstract: "A weather-pattern expert approach for short-term photovoltaic forecasting under internal and external drift.",
