@@ -1,0 +1,135 @@
+body[data-page] .News__newsArea {
+  box-sizing: border-box;
+  width: 400px;
+  max-width: 400px;
+  right: 20px;
+  bottom: 20px;
+  padding: 16px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: none;
+  transition:
+    opacity 0.5s ease,
+    visibility 0s linear 0.5s;
+}
+
+body[data-current_section="kv"] .News__newsArea {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.News__newsTitle {
+  font-family: "Roboto Mono", "Source Code Pro", Menlo, Courier, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: normal;
+}
+
+.News__newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100dvh - 104px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: auto;
+  scrollbar-width: none;
+}
+
+.News__newsList::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.News__newsItem,
+.News__newsItem:nth-child(1) {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.News__newsItem:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.News__newsDate {
+  font-family: "Roboto Mono", "Source Code Pro", Menlo, Courier, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: normal;
+}
+
+.News__newsText {
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto Mono", "Source Code Pro", Menlo, Courier, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: normal;
+}
+
+@media not screen and (min-width: 769px) {
+  #tweakpane-mainlogo-material {
+    display: none !important;
+  }
+
+  body[data-page] .News__newsArea {
+    top: auto;
+    right: 18px;
+    bottom: 18px;
+    left: auto;
+    width: calc(100vw - 36px);
+    max-width: 400px;
+    padding: 16px;
+    transform: none;
+  }
+
+  .News__newsTitle {
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    font-size: 11px;
+  }
+
+  .News__newsList {
+    gap: 6px;
+    max-height: calc(100dvh - 102px);
+  }
+
+  .News__newsItem,
+  .News__newsItem:nth-child(1) {
+    display: flex;
+    gap: 2px;
+    padding-bottom: 4px;
+  }
+
+  .News__newsDate {
+    font-size: 11px;
+  }
+
+  .News__newsText {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-page] .News__newsArea {
+    transition: none;
+  }
+}

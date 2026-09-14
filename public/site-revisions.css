@@ -1,0 +1,151 @@
+/* DeepPrior homepage revisions (2026-09-14): loading, About page, paper index, footer contact.
+   Loaded after the compiled styles; only additive overrides live here. */
+
+/* 0. Loading: no animation at all — a plain black cover that fades out once the page is ready */
+/* nothing moves on the loading cover: no Lottie, no text; the black cover just fades once shaders are ready */
+.Loading__lottieContainer, #loading-text { display: none !important; }
+#loading-overlay { background: #000; }
+
+/* Scroll indicator: hidden Service entry */
+.TopScrollIndicator__section_item[hidden] { display: none !important; }
+.TopScrollIndicator__section_label { display: none !important; }
+
+/* 3. About (former Vision): transparent layer over the shared hero renderer, like People */
+[data-current_section="vision"] .Header__container,
+[data-current_section="vision"] .Header__nav a,
+[data-current_section="vision"] .Header__logo a,
+[data-current_section="vision"] .Header__contact,
+[data-current_section="vision_out"] .Header__container { color: #fff !important; }
+[data-current_section="vision"] .Header__logo svg,
+[data-current_section="vision"] .Header__logo svg * { color: #fff !important; fill: #fff !important; }
+[data-current_section="vision"] .Header__contact { border-color: rgba(255, 255, 255, 0.76) !important; }
+[data-current_section="vision"] .Header__contact:hover { background: #fff !important; color: #080a0b !important; }
+[data-current_section="vision"] .HamburgerIcon__line { background-color: #fff !important; }
+body[data-current_section="footer"] .MissionVision__container[data-vision-container] { opacity: 0 !important; visibility: hidden; transition: opacity 0.4s ease, visibility 0s linear 0.4s; }
+body[data-current_section="vision"] .MissionVision__container[data-vision-container] .MissionVision__text_en { color: #fff; }
+.MissionVision__container[data-vision-container] .MissionVision__ttl svg path { fill: #fff; stroke: none; }
+[data-vision-container] .MissionVision__text { width: 50%; margin-left: auto; text-align: center; }
+.MissionVision__container[data-vision-container] .MissionVision__line { display: block; margin-bottom: 0.2em; }
+.MissionVision__container[data-vision-container] .MissionVision__line + br { display: none; }
+.MissionVision__container[data-vision-container] .MissionVision__marker { background: none !important; color: #fff; padding: 0; }
+@media (max-width: 768px) { [data-vision-container] .MissionVision__text { width: 100%; text-align: left; } }
+
+/* 4. Footer: contact details panel, placeholder social link */
+.Footer__top_contact { align-self: flex-end; margin-bottom: -18px; }
+.Footer__contact_button { appearance: none; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.Footer__contactDetails {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  font-family: "IBM Plex Mono", "Google Sans Code", ui-monospace, Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-align: right;
+}
+.Footer__contactDetails p { margin: 0; }
+.Footer__contactDetails a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.Footer__contactDetails_label { display: inline-block; min-width: 3.2em; margin-right: 12px; color: rgba(255, 255, 255, 0.55); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
+.Footer__link--placeholder { cursor: default; opacity: 0.55; }
+.Footer__privacyLicense { display: none; }
+.SideMenu__social_link[aria-disabled="true"] { opacity: 0.55; cursor: default; }
+
+/* 2c. Paper index (All papers) — same card language as the platform section, three vertical tracks */
+.PaperIndex,
+.PaperIndex * { box-sizing: border-box; }
+.PaperIndex {
+  --pi-ink: #f4f5f5;
+  --pi-muted: rgba(244, 245, 245, 0.62);
+  --pi-faint: rgba(244, 245, 245, 0.38);
+  --pi-line: rgba(244, 245, 245, 0.2);
+  --pi-mono: "IBM Plex Mono", "Google Sans Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --pi-display: acumin-pro, "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100lvh;
+  padding: 118px 96px 20vh;
+  color: var(--pi-ink);
+  font-family: var(--pi-mono);
+  pointer-events: auto;
+}
+.PaperIndex__rail {
+  position: absolute;
+  top: 118px;
+  bottom: 20vh;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  color: var(--pi-faint);
+}
+.PaperIndex__rail--left { left: 34px; }
+.PaperIndex__rail--right { right: 34px; }
+.PaperIndex__railLabel {
+  writing-mode: vertical-rl;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.PaperIndex__rail--right .PaperIndex__railLabel { transform: rotate(180deg); }
+.PaperIndex__railTicks { display: flex; flex: 1 1 auto; flex-direction: column; justify-content: space-between; align-items: center; }
+.PaperIndex__railTicks i { display: block; width: 8px; height: 1px; background: var(--pi-line); }
+.PaperIndex__railTicks i.is-major { width: 18px; background: var(--pi-faint); }
+.PaperIndex__header { margin-bottom: 40px; }
+.PaperIndex__eyebrow { display: block; margin-bottom: 14px; color: var(--pi-muted); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
+.PaperIndex__title { margin: 0; font-family: var(--pi-display); font-size: clamp(42px, 5.2vw, 74px); font-weight: 500; line-height: 0.92; letter-spacing: -0.035em; }
+.PaperIndex__title em { font-style: normal; color: var(--pi-muted); }
+.PaperIndex__meta { margin: 16px 0 0; color: var(--pi-muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+.PaperIndex__columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 14px; align-items: stretch; }
+.PaperIndex__card[hidden] { display: none; }
+.PaperIndex__more { display: flex; justify-content: center; margin-top: 28px; }
+.PaperIndex__moreButton {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 9px 22px 8px;
+  border: 1px solid var(--pi-line); border-radius: 999px; background: rgba(6, 8, 10, 0.45); color: var(--pi-ink);
+  font-family: var(--pi-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+.PaperIndex__moreButton:hover, .PaperIndex__moreButton:focus-visible { background: #fff; border-color: #fff; color: #080a0b; outline: 0; }
+.PaperIndex__moreButton[hidden] { display: none; }
+.PaperIndex__card {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--pi-line);
+  border-radius: 20px;
+  background: rgba(6, 8, 10, 0.42);
+  -webkit-backdrop-filter: blur(7px) saturate(0.85);
+  backdrop-filter: blur(7px) saturate(0.85);
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+.PaperIndex__card:hover { border-color: rgba(255, 255, 255, 0.5); background: rgba(6, 8, 10, 0.55); }
+.PaperIndex__thumb { display: block; overflow: hidden; border-radius: 6px; aspect-ratio: 1 / 1.414; background: #f1f1ed; }
+.PaperIndex__thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.PaperIndex__body { display: flex; min-width: 0; flex-direction: column; gap: 7px; }
+.PaperIndex__cardMeta { display: flex; justify-content: space-between; color: var(--pi-muted); font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; }
+.PaperIndex__cardTitle { margin: 0; font-family: var(--pi-display); font-size: 16px; font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.PaperIndex__cardTitle a { color: inherit; text-decoration: none; }
+.PaperIndex__cardTitle a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.PaperIndex__cardAuthors { margin: 0; color: var(--pi-ink); font-size: 10.5px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.PaperIndex__cardAuthors b { font-weight: 700; }
+.PaperIndex__cardDetails { margin: 0; color: var(--pi-faint); font-size: 9.5px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.PaperIndex__cardVenue { margin-top: auto; padding-top: 6px; }
+.PaperIndex__cardVenue { margin: 0; color: var(--pi-muted); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+.PaperIndex__tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 2px 0 0; padding: 0; list-style: none; }
+.PaperIndex__tags li { padding: 3px 7px 2px; border: 1px solid var(--pi-line); border-radius: 999px; color: var(--pi-muted); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+@media (max-width: 1100px) {
+  .PaperIndex { padding: 110px 60px 16vh; }
+  .PaperIndex__columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .PaperIndex__rail { display: none; }
+}
+@media (max-width: 768px) {
+  .PaperIndex { padding: 96px 18px 14vh; }
+  .PaperIndex__title { font-size: clamp(38px, 12vw, 58px); }
+  .PaperIndex__columns { grid-template-columns: 1fr; }
+  .PaperIndex__card { grid-template-columns: 72px minmax(0, 1fr); padding: 12px; border-radius: 16px; }
+}

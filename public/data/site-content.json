@@ -1,0 +1,601 @@
+{
+  "hero": {
+    "academicCollaborators": "Built with London Business School, Oxford University, Imperial College London, ETH Zurich, TU Munich, TU Delft, and more."
+  },
+  "news": [
+    {
+      "displayDate": "05 August 2026",
+      "datetime": "2026-08-05",
+      "text": "Our paper titled \"OrderFusion: Encoding orderbook for end-to-end probabilistic intraday electricity price forecasting\" is accepted by the journal Advanced Engineering Informatics"
+    },
+    {
+      "displayDate": "26 July 2026",
+      "datetime": "2026-07-26",
+      "text": "Our paper titled \"Counterfactual load forecasting with LLM-structured events and representation learning\" is accepted by the journal Applied Energy"
+    },
+    {
+      "displayDate": "13 July 2026",
+      "datetime": "2026-07-13",
+      "text": "Our paper titled \"A market-rule-informed neural network for efficient imbalance electricity price forecasting\" is accepted by the journal Advanced Engineering Informatics"
+    },
+    {
+      "displayDate": "26 June 2026",
+      "datetime": "2026-06-26",
+      "text": "Our paper titled \"Orderbook feature learning and asymmetric generalization in intraday electricity markets\" is accepted by the journal Electric Power Systems Research"
+    }
+  ],
+  "papers": [
+    {
+      "id": "orderfusion",
+      "title": "OrderFusion: Encoding Orderbook For End-To-End Probabilistic Intraday Electricity Price Forecasting",
+      "authors": "**Runyao Yu**, **Yuchen Tao**, Fabian Leimgruber, Tara Esterl, **Jochen Stiasny**, **Derek W. Bunn**, **Qingsong Wen**, Hongye Guo, **Jochen L. Cremer**",
+      "affiliations": "Delft University of Technology · Austrian Institute of Technology · RWTH Aachen · London Business School · University of Oxford · Squirrel AI · Tsinghua University",
+      "venue": "Advanced Engineering Informatics",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "Advanced Engineering Informatics · 2026",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/Orderfusion.png",
+      "href": "https://www.sciencedirect.com/science/article/pii/S1474034626008232",
+      "image": "/papers/covers/orderfusion.svg"
+    },
+    {
+      "id": "mrinn",
+      "title": "A Market-Rule-Informed Neural Network For Efficient Imbalance Electricity Price Forecasting",
+      "authors": "**Runyao Yu**, Julia Lin, **Derek W. Bunn**, **Jochen Stiasny**, **Wentao Wang**, **Yujie Chen**, Tara Esterl, **Peter Palensky**, **Jochen L. Cremer**",
+      "affiliations": "Delft University of Technology · Austrian Institute of Technology · London Business School · University of Technology Sydney · The Chinese University of Hong Kong, Shenzhen",
+      "venue": "Advanced Engineering Informatics",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "Advanced Engineering Informatics · 2026",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/MRINN.png",
+      "href": "https://www.sciencedirect.com/science/article/pii/S1474034626007755",
+      "image": "/papers/covers/mrinn.svg"
+    },
+    {
+      "id": "orderbook-feature-learning",
+      "title": "Orderbook Feature Learning And Asymmetric Generalization In Intraday Electricity Markets",
+      "authors": "**Runyao Yu**, Ruochen Wu, Yongsheng Han, **Jochen L. Cremer**",
+      "affiliations": "Delft University of Technology · Austrian Institute of Technology",
+      "venue": "PSCC 2026 · Electric Power Systems Research 2027",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "PSCC 2026 · Electric Power Systems Research 2027",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/orderbook feature learning.png",
+      "href": "https://www.sciencedirect.com/science/article/pii/S0378779626008898",
+      "image": "/papers/covers/orderbook-feature-learning.svg"
+    },
+    {
+      "id": "counterfactual-load",
+      "title": "Counterfactual Load Forecasting With LLM-Structured Events And Representation Learning",
+      "authors": "**Yujie Chen**, Yifei Gao, **Runyao Yu**, Yuhe Wu, Guangyu Wang, Yue Chen, Tongxin Li",
+      "affiliations": "The Chinese University of Hong Kong, Shenzhen · Dongbei University of Finance and Economics · Delft University of Technology · The Hong Kong University of Science and Technology (Guangzhou) · New York University Shanghai · The Chinese University of Hong Kong",
+      "venue": "Applied Energy",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "Applied Energy · 2026",
+      "categories": [
+        "Load forecasting"
+      ],
+      "category": "load",
+      "figure": "/papers/Model_figures/Counterfactual load forecasting with LLM-structured events and.png",
+      "href": "https://www.sciencedirect.com/science/article/abs/pii/S0306261926012109",
+      "image": "/papers/covers/counterfactual-load.svg"
+    },
+    {
+      "id": "weather-pattern-experts",
+      "title": "Adapting To Drift: Weather-Pattern Experts For Short-Term Photovoltaic Power Forecasting",
+      "authors": "**Wentao Wang**, **Haiyan Lu**, Jianzhou Wang, Ayesha Ubaid, Fanyi Yang, **Runyao Yu**",
+      "affiliations": "University of Technology Sydney · Xidian University · Delft University of Technology · Austrian Institute of Technology · Macau University of Science and Technology",
+      "venue": "Advanced Engineering Informatics",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "Advanced Engineering Informatics · 2026",
+      "categories": [
+        "Renewable generation forecasting"
+      ],
+      "category": "renewable",
+      "figure": "/papers/Model_figures/Adapting to drift Weatherpattern experts for short-term photovoltaic power forecasting.png",
+      "href": "https://www.sciencedirect.com/science/article/pii/S1474034626004738",
+      "image": "/papers/covers/weather-pattern-experts.svg"
+    },
+    {
+      "id": "pv-nonlinear-weather",
+      "title": "Enhancing PV Power Forecasting Accuracy Through Nonlinear Weather Correction Based On Multi-Task Learning",
+      "authors": "Zhirui Tian, **Yujie Chen**, Guangyu Wang",
+      "affiliations": "The Chinese University of Hong Kong, Shenzhen · Dongbei University of Finance and Economics",
+      "venue": "Applied Energy",
+      "year": "2025",
+      "displayDate": "2025",
+      "datetime": "2025",
+      "details": "Applied Energy · 2025",
+      "categories": [
+        "Renewable generation forecasting"
+      ],
+      "category": "renewable",
+      "figure": "/papers/Model_figures/enhancing pv power forecasting.png",
+      "href": "https://www.sciencedirect.com/science/article/abs/pii/S0306261925002557",
+      "image": "/papers/covers/pv-nonlinear-weather.svg"
+    },
+    {
+      "id": "time-llm",
+      "title": "Time-LLM: Time Series Forecasting By Reprogramming Large Language Models",
+      "authors": "Ming Jin, Shiyu Wang, Lintao Ma, Zhixuan Chu, James Y. Zhang, Xiaoming Shi, Pin-Yu Chen, Yuxuan Liang, Yuan-Fang Li, Shirui Pan, **Qingsong Wen**",
+      "affiliations": "Monash University · Ant Group · IBM Research · Griffith University · Alibaba Group · The Hong Kong University of Science and Technology (Guangzhou)",
+      "venue": "ICLR",
+      "year": "2024",
+      "displayDate": "2024",
+      "datetime": "2024",
+      "details": "ICLR · 2024",
+      "categories": [
+        "Time series foundation models"
+      ],
+      "category": "foundation",
+      "figure": "/papers/Model_figures/timeLLM.png",
+      "href": "https://openreview.net/forum?id=sHXLsv9AOw",
+      "image": "/papers/covers/time-llm.svg"
+    },
+    {
+      "id": "imbalance-price-densities",
+      "title": "Forecasting Imbalance Price Densities With Statistical Methods And Neural Networks",
+      "authors": "Vighnesh Natarajan Ganesh, **Derek W. Bunn**",
+      "affiliations": "London Business School",
+      "venue": "IEEE Transactions on Energy Markets, Policy and Regulation",
+      "year": "2023",
+      "displayDate": "2023",
+      "datetime": "2023",
+      "details": "IEEE Transactions on Energy Markets, Policy and Regulation · 2023",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/Forecasting imbalance price densities with statistical methods.png",
+      "href": "https://ieeexplore.ieee.org/document/10177230/",
+      "image": "/papers/covers/imbalance-price-densities.svg"
+    },
+    {
+      "id": "load-extreme-weather",
+      "title": "Electricity Load Forecasting Under Extreme Heat And Cold Waves",
+      "authors": "Nan Lu, Dalin Qin, Yangze Zhou, Lei Bai, **Qingsong Wen**, Chongqing Kang, Yi Wang",
+      "affiliations": "The University of Hong Kong · Shanghai AI Laboratory · Squirrel AI Learning · Tsinghua University",
+      "venue": "Nature Communications",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "Nature Communications · 2026",
+      "categories": [
+        "Load forecasting"
+      ],
+      "category": "load",
+      "figure": "/papers/Model_figures/Electricity load forecasting under extreme heat and cold waves .png",
+      "href": "/#papers",
+      "image": "/papers/covers/load-extreme-weather.svg"
+    },
+    {
+      "id": "pricefm",
+      "title": "PriceFM: Foundation Model For Probabilistic Electricity Price Forecasting",
+      "authors": "**Runyao Yu**, Chenhui Gu, **Jochen Stiasny**, **Qingsong Wen**, Wasim Sarwar Dilov, **Lianlian Qi**, **Jochen L. Cremer**",
+      "affiliations": "Delft University of Technology · Austrian Institute of Technology · Rimac Technology · University of Oxford · Squirrel AI · Technical University of Munich",
+      "venue": "",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "2026",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/PriceFM.png",
+      "href": "https://arxiv.org/abs/2508.04875",
+      "image": "/papers/covers/pricefm.svg"
+    },
+    {
+      "id": "fedformer",
+      "title": "FEDformer: Frequency Enhanced Decomposed Transformer For Long-Term Series Forecasting",
+      "authors": "Tian Zhou, Ziqing Ma, **Qingsong Wen**, Xue Wang, Liang Sun, Rong Jin",
+      "affiliations": "DAMO Academy, Alibaba Group",
+      "venue": "ICML",
+      "year": "2023",
+      "displayDate": "2023",
+      "datetime": "2023",
+      "details": "ICML · 2023",
+      "categories": [
+        "Time series foundation models"
+      ],
+      "category": "foundation",
+      "figure": "/papers/Model_figures/FEDFomer.png",
+      "href": "https://proceedings.mlr.press/v162/zhou22g.html",
+      "image": "/papers/covers/fedformer.svg"
+    },
+    {
+      "id": "algorithmic-trading",
+      "title": "Algorithmic Trading Of Real-Time Electricity With Machine Learning",
+      "authors": "Vighnesh Natarajan Ganesh, **Derek W. Bunn**",
+      "affiliations": "London Business School",
+      "venue": "Quantitative Finance",
+      "year": "2024",
+      "displayDate": "2024",
+      "datetime": "2024",
+      "details": "Quantitative Finance · 2024",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/Algorithmic Trading of Real-time Electricity with Machine Learning.png",
+      "href": "https://www.tandfonline.com/doi/full/10.1080/14697688.2024.2420609",
+      "image": "/papers/covers/algorithmic-trading.svg"
+    },
+    {
+      "id": "epf-review",
+      "title": "Deep Learning For Electricity Price Forecasting: A Review Of Day-Ahead, Intraday, And Balancing Electricity Markets",
+      "authors": "**Runyao Yu**, **Derek W. Bunn**, Julia Lin, **Jochen Stiasny**, Fabian Leimgruber, Tara Esterl, Yuchen Tao, **Lianlian Qi**, **Yujie Chen**, **Wentao Wang**, **Jochen L. Cremer**",
+      "affiliations": "Delft University of Technology · Austrian Institute of Technology · London Business School · RWTH Aachen · Technical University of Munich · The Chinese University of Hong Kong · University of Technology Sydney",
+      "venue": "EEM",
+      "year": "2026",
+      "displayDate": "2026",
+      "datetime": "2026",
+      "details": "EEM · 2026",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/deep learning for electricity price forecasting a review of day-ahead intraday and balancing.png",
+      "href": "https://arxiv.org/abs/2602.10071",
+      "image": "/papers/covers/epf-review.svg"
+    },
+    {
+      "id": "renewable-forward-markets",
+      "title": "Renewable Power And Electricity Prices: The Impact Of Forward Markets",
+      "authors": "Heikki Peura, **Derek W. Bunn**",
+      "affiliations": "Imperial College Business School · London Business School",
+      "venue": "Management Science",
+      "year": "2021",
+      "displayDate": "2021",
+      "datetime": "2021",
+      "details": "Management Science · 2021",
+      "categories": [
+        "Electricity price forecasting"
+      ],
+      "category": "price",
+      "figure": "/papers/Model_figures/Renewable Power and Electricity Prices the impact of.png",
+      "href": "https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3710",
+      "image": "/papers/covers/renewable-forward-markets.svg"
+    },
+    {
+      "id": "time-moe",
+      "title": "Time-MoE: Billion-Scale Time Series Foundation Models With Mixture Of Experts",
+      "authors": "Xiaoming Shi, Shiyu Wang, Yuqi Nie, Dianqi Li, Zhou Ye, **Qingsong Wen**, Ming Jin",
+      "affiliations": "Xiaohongshu Inc · Princeton University · Squirrel AI Learning · Griffith University",
+      "venue": "ICLR",
+      "year": "2025",
+      "displayDate": "2025",
+      "datetime": "2025",
+      "details": "ICLR · 2025",
+      "categories": [
+        "Time series foundation models"
+      ],
+      "category": "foundation",
+      "figure": "/papers/Model_figures/time-moe.png",
+      "href": "https://openreview.net/forum?id=e1wDDFmlVu",
+      "image": "/papers/covers/time-moe.svg"
+    }
+  ],
+  "people": {
+    "heading": "People",
+    "countLabel": "researchers",
+    "groups": [
+      {
+        "key": "leadership",
+        "label": "Leaders",
+        "roles": [
+          "Founder",
+          "Co-Founder",
+          "Chair"
+        ],
+        "direction": 1
+      },
+      {
+        "key": "members",
+        "label": "Members",
+        "roles": [
+          "Member"
+        ],
+        "direction": -1
+      }
+    ],
+    "members": [
+      {
+        "name": "Runyao Yu",
+        "role": "Founder",
+        "initials": "RY",
+        "universities": [
+          "Delft University of Technology"
+        ],
+        "links": {
+          "website": "https://runyao-yu.com/",
+          "linkedin": "https://www.linkedin.com/in/runyao-yu/",
+          "github": "https://github.com/runyao-yu",
+          "email": "runyao.yu@tudelft.nl"
+        },
+        "bio": "Runyao advances uncertainty-aware electricity price forecasting across day-ahead, intraday, and balancing markets, with a focus on probabilistic modeling, market microstructure, and foundation models for energy systems. His academic path includes a PhD at TU Delft and an MSc from TU Munich, complemented by visiting positions at ETH Zurich and London Business School. Alongside academia, he serves as Lead Data Scientist at (Bugatti-) Rimac Automobili, with industrial experience at BMW, Danfoss, KPMG, and Arup. At DeepPrior, Runyao leads research at the intersection of AI, forecasting, and real-world energy market decision-making."
+      },
+      {
+        "name": "Ruiling Ding",
+        "role": "Co-Founder",
+        "initials": "RD",
+        "universities": [
+          "Frankfurt School of Finance & Management"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/ruiling-ding-49b743161/",
+          "email": "ruilingding07@gmail.com"
+        },
+        "bio": "Ruiling combines top-tier financial rigor with strategic development for high-growth technology. Her foundation is anchored in Investment Banking at Morgan Stanley and SMBC in London and Frankfurt, with professional tenures at PwC, Infineon, and Deutsche Börse. With a background in international business development for Chinese SaaS and robotics startups, she bridges the gap between technical research and commercial strategy. Ruiling holds an MSc in Finance from Frankfurt School, with international studies at UC Berkeley and UBC. At DeepPrior, she steers operations and finance within the European energy forecasting sector."
+      },
+      {
+        "name": "Prof. Derek W. Bunn",
+        "role": "Chair",
+        "initials": "DWB",
+        "universities": [
+          "London Business School"
+        ],
+        "links": {
+          "website": "https://www.london.edu/faculty-and-research/faculty-profiles/b/bunn-dw",
+          "email": "dbunn@london.edu"
+        },
+        "bio": "Derek works at the intersection of forecasting, decision analysis, and energy economics through a career spanning academic leadership, editorial stewardship, and policy advisory work. He is Professor of Decision Sciences at London Business School, where his research has shaped management science and energy market analysis through more than 250 publications and 9 books. His academic path includes an MA from Cambridge, MSc and PhD degrees from London, and a CEGB Engineering Fellowship at Oxford. Alongside academia, Derek has served in leading roles across the field, including chief editorships at the Journal of Forecasting and Energy Economics, founding editorship of the Journal of Energy Markets, and advisory appointments to UK government and electricity market institutions. At the intersection of forecasting, energy, and decision-making, his work continues to influence both scholarship and real-world market design."
+      },
+      {
+        "name": "Prof. Qingsong Wen",
+        "role": "Chair",
+        "initials": "QW",
+        "universities": [
+          "University of Oxford"
+        ],
+        "links": {
+          "website": "https://sites.google.com/site/qingsongwen8/",
+          "linkedin": "https://www.linkedin.com/in/qingsong-wen-22814156/",
+          "email": "qingsongedu@gmail.com"
+        },
+        "bio": "Qingsong Wen is PhD Supervisor at the University of Oxford, a Forbes Top 100 Most Influential Chinese Elite, and Head of AI & Chief Scientist at Squirrel Ai Learning. He specializes in machine learning, data mining, and signal processing, with a particular focus on AI for time series. His academic path includes an M.S. and Ph.D. in Electrical and Computer Engineering from Georgia Tech, complemented by industrial experience at Alibaba, Qualcomm, and Marvell. He has published over 200 papers with more than 20,000 citations, and holds leadership roles across IEEE and INNS, including Chair of the IEEE CIS Task Force on AI for Time Series and Spatio-Temporal Data. At DeepPrior, Qingsong advises research at the intersection of AI, time-series modeling, and intelligent decision-making systems."
+      },
+      {
+        "name": "Prof. Peter Palensky",
+        "role": "Chair",
+        "initials": "PP",
+        "universities": [
+          "Delft University of Technology"
+        ],
+        "links": {
+          "website": "https://palensky.org/",
+          "linkedin": "https://www.linkedin.com/in/peter-palensky/",
+          "email": "p.palensky@tudelft.nl"
+        },
+        "bio": "Peter specializes in intelligent power systems research across grid digitalization, integrated energy systems, and cyber-physical energy infrastructure, with a focus on modeling and simulation, digital twins, automation, and secure operation of future power grids. His academic path includes a full Professorship at TU Delft and doctoral training at Vienna University of Technology, complemented by leadership and research roles at Lawrence Berkeley National Laboratory, the University of Pretoria, and the Austrian Institute of Technology. Alongside academia, he has built and led research with strong industrial relevance, spanning energy automation, smart cities, and sustainable buildings. At DeepPrior, Peter brings senior leadership in intelligent power grids, digital twins, and large-scale energy system innovation."
+      },
+      {
+        "name": "Prof. Haiyan Lu",
+        "role": "Chair",
+        "initials": "HL",
+        "universities": [
+          "University of Technology Sydney"
+        ],
+        "links": {
+          "website": "https://profiles.uts.edu.au/Haiyan.Lu",
+          "email": "Haiyan.Lu@uts.edu.au"
+        },
+        "bio": "Haiyan works on artificial intelligence, data analytics, and time series modelling, with a focus on decision systems, intelligent services, and trustworthy digital systems. She serves as Head of Discipline in Data Analytics. At DeepPrior, Haiyan brings leadership in AI, data science, and intelligent decision-making for real-world digital and energy applications."
+      },
+      {
+        "name": "Prof. Jochen L. Cremer",
+        "role": "Chair",
+        "initials": "JLC",
+        "universities": [
+          "Delft University of Technology"
+        ],
+        "links": {
+          "website": "https://www.jochen-cremer.com/",
+          "linkedin": "https://www.linkedin.com/in/jochen-cremer/",
+          "email": "J.L.Cremer@tudelft.nl"
+        },
+        "bio": "Jochen advances AI-driven power system operation across reliability, security, and resilience, with a focus on machine learning, physics-informed methods, and data-driven control for complex energy systems. His academic path includes an Associate Professorship at TU Delft and a PhD from Imperial College London, complemented by earlier research experience at Carnegie Mellon University and MIT, as well as multidisciplinary training at RWTH Aachen University. Alongside academia, he serves as Principal Scientist at the Austrian Institute of Technology and co-director of Student Energy. At DeepPrior, Jochen serves as Committee Chair, supporting research at the intersection of AI and energy systems."
+      },
+      {
+        "name": "Dr. Shen Li",
+        "role": "Member",
+        "initials": "SL",
+        "universities": [
+          "Imperial College London"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/shen-li-42012983/",
+          "email": "Shen.Li@fortescue.com"
+        },
+        "bio": "Shen specializes in battery systems and intelligent vehicles. His academic path includes a PhD from Tsinghua University and postdoctoral research at Imperial College London, complemented by strong publication records in  intelligent transportation and battery modeling. Alongside academia, he has brought this expertise into industry through his role as Senior Battery Engineer at (Bugatti-) Rimac. At DeepPrior, he brings cross-domain strength in battery intelligence and data-driven mobility research."
+      },
+      {
+        "name": "Dr. Zihao Zhou",
+        "role": "Member",
+        "initials": "ZZ",
+        "universities": [
+          "University of Oxford"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/zihao-zhou-5b281b12b/",
+          "email": "zihaobattery@gmail.com"
+        },
+        "bio": "Zihao focuses on AI for battery aging, with a focus on reliability modeling, early-life SOH prediction, and hybrid electrochemical-AI methods for lithium-ion batteries. His academic path includes a PhD in Electrical and Electronics Engineering from the University of Oxford and an MSc in the same field from Tsinghua University, providing a strong foundation in battery systems and intelligent modeling. Alongside academia, he serves as Senior Reliability Modeling and Optimization Engineer at CATL, with industrial experience spanning Huawei and Tencent. At DeepPrior, Zihao contributes to research at the intersection of AI, battery aging, and next-generation energy technologies."
+      },
+      {
+        "name": "Dr. Jochen Stiasny",
+        "role": "Member",
+        "initials": "JS",
+        "universities": [
+          "Delft University of Technology"
+        ],
+        "links": {
+          "website": "https://www.tudelft.nl/en/staff/j.b.stiasny/",
+          "linkedin": "https://www.linkedin.com/in/jochen-stiasny-83184a1b1/",
+          "github": "https://github.com/jbesty",
+          "email": "j.b.stiasny@tudelft.nl"
+        },
+        "bio": "Jochen contributes to AI for power systems, with a focus on scientific machine learning, physics-informed neural networks, and data-driven methods for energy system modeling and control. His academic path includes a PhD in Wind and Energy Systems from DTU, complemented by postdoctoral research at TU Delft, an external research stay at the University of Washington, and earlier engineering training across ETH Zurich, Lund University, and Technische Universität Darmstadt. Alongside academia, he brings hands-on engineering experience from AMZ Racing and Adaptricity. At DeepPrior, Jochen contributes to research at the intersection of AI, power systems, and next-generation energy infrastructure."
+      },
+      {
+        "name": "Dr. Andreas Billert",
+        "role": "Member",
+        "initials": "AB",
+        "universities": [
+          "Karlsruhe Institute of Technology"
+        ],
+        "links": {
+          "website": "https://www.fast.kit.edu/lff/Automatisierung_13527.php",
+          "linkedin": "https://www.linkedin.com/in/dr-ing-andreas-billert-2a0a11226/",
+          "email": "andreas.billert@partner.kit.edu"
+        },
+        "bio": "Andreas specializes in AI for battery systems, with a focus on machine learning, charging, and software function development for high-voltage batteries. His academic path includes doctoral research in batteries and machine learning in cooperation between BMW and KIT, complemented by an MSc in Automotive Technology and a BSc in Engineering Science from the Technical University of Munich, as well as study-abroad experience at Shanghai Jiao Tong University and UC Berkeley. Alongside academia, he serves as Cluster Leader at BMW, where he leads charging and digitalization for battery software function development, with earlier experience spanning battery modeling, automotive research, and engineering practice. At DeepPrior, Andreas contributes to research at the intersection of AI, battery intelligence, and next-generation mobility systems."
+      },
+      {
+        "name": "Yuchen Tao",
+        "role": "Member",
+        "initials": "YT",
+        "universities": [
+          "RWTH Aachen"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/yuchen-tao/",
+          "email": "yuchen.tao@rwth-aachen.de"
+        },
+        "bio": "Yuchen advances AI for automated driving, with a focus on perception, intelligent systems, and real-world deployment of advanced driving technologies. His academic path includes studies at RWTH Aachen University and Shanghai Jiao Tong University, providing a strong foundation across engineering and applied AI. Alongside academia, he serves as Senior AI Engineer, with industrial experience spanning Hyundai, Bosch, and Volkswagen. At DeepPrior, Yuchen contributes to advanced software development for energy trading."
+      },
+      {
+        "name": "Yuqicheng Zhu",
+        "role": "Member",
+        "initials": "YZ",
+        "universities": [
+          "Max Planck Institute"
+        ],
+        "links": {
+          "website": "https://zhuyuqicheng.github.io/",
+          "linkedin": "https://www.linkedin.com/in/yuqicheng-zhu-531658161/",
+          "github": "https://github.com/ZhuYuqicheng"
+        },
+        "bio": "Yuqicheng specializes in large language models, AI agents, and knowledge graphs. He received his PhD from the Max Planck Institute and the University of Stuttgart, and his MSc from TU Munich, with a visiting position at Oxford University. He also brings industrial experience from Bosch (BCAI)."
+      },
+      {
+        "name": "Lianlian Qi",
+        "role": "Member",
+        "initials": "LQ",
+        "universities": [
+          "Technical University of Munich"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/lianlian-qi-a3257a147/",
+          "email": "lianlian.qi@ait.ac.at"
+        },
+        "bio": "Lianlian shapes AI for intelligent urban design, with a focus on deep learning, human-centered systems, and data-driven approaches for shaping more adaptive urban environments. Her academic path includes doctoral research at the Technical University of Munich and Austrian Institute of Technology, complemented by an MSc in Artificial Intelligence from the University of Edinburgh. Alongside academia, her industrial experience spans leading technology companies including ByteDance and DiDi. At DeepPrior, Lianlian contributes to research at the intersection of AI, design, and real-world urban innovation."
+      },
+      {
+        "name": "Yujie Chen",
+        "role": "Member",
+        "initials": "YC",
+        "universities": [
+          "The Chinese University of Hong Kong"
+        ],
+        "links": {
+          "website": "https://yujiechen8888.github.io/",
+          "github": "https://github.com/YujieChen8888",
+          "email": "chenyujie@cuhk.edu.cn"
+        },
+        "bio": "Yujie works on load forecasting, deep learning, and artificial intelligence for energy systems. He is a PhD researcher at The Chinese University of Hong Kong, Shenzhen, with a visiting position at Westlake University, and was a recipient of the national scholarship."
+      },
+      {
+        "name": "Wentao Wang",
+        "role": "Member",
+        "initials": "WW",
+        "universities": [
+          "University of Technology Sydney"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/wentao-wang-7847b536a/",
+          "email": "Wentao.Wang@student.uts.edu.au"
+        },
+        "bio": "Wentao focuses on renewable energy forecasting, artificial intelligence, and data-driven modeling for energy systems. He received his PhD from the University of Technology Sydney, and was a recipient of the national scholarship for postgraduates and the UTS International Research Scholarship."
+      },
+      {
+        "name": "Zhongquan Chen",
+        "role": "Member",
+        "initials": "ZC",
+        "universities": [
+          "Endhoven University of Technology"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/zhongquan-chen-78a708209/",
+          "github": "https://github.com/zhc079",
+          "email": "chenzhnq@gmail.com"
+        },
+        "bio": "Zhongquan works on uncertainty quantification, multiscale model, and stochastic processes. The application includes network systems, energy transport in organic semiconductors.  His academic path includes a PhD in Applied Math from Eindhoven University of Technology, a Master degree from University of Saskatchewan, and a Bachelor from Sun Yat-sen University. At DeepPrior, Zhongquan Chen contributes to the research at the intersection of scientific ML, price prediction and optimization."
+      },
+      {
+        "name": "Jeffrey Xu",
+        "role": "Member",
+        "initials": "JX",
+        "universities": [
+          "Hongkong University of Science and Technology"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/weifan-xu-jeffrey/",
+          "email": "wxubp@connect.ust.hk"
+        },
+        "bio": "Jeffrey focuses on applying AI models to energy forecasting. His academic path includes a PhD from the Hong Kong University of Science and Technology, where he built Stellerus and Mission Rocket and worked on obtaining fundamental energy data. At DeepPrior, Jeffrey contributes to research at the intersection of AI, probabilistic forecasting, and electricity price prediction."
+      },
+      {
+        "name": "Shuyi Gao",
+        "role": "Member",
+        "initials": "SG",
+        "universities": [
+          "Delft University of Technology"
+        ],
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/shuyi-gao/",
+          "email": "s.gao@tudelft.nl"
+        },
+        "bio": "Shuyi focuses on AI, battery dispatch, and electricity markets. Her research combines reinforcement learning, optimization, and agent-based modeling to improve decision-making in complex energy systems. Her academic path includes doctoral research at TU Delft in the Netherlands, where she develops AI-driven approaches for energy management, storage optimization, and power system operations, alongside work as a Quantitative Researcher in energy trading. At DeepPrior, Shuyi contributes to research at the intersection of AI, energy systems, and technological innovation."
+      }
+    ]
+  },
+  "paperCategories": [
+    {
+      "key": "price",
+      "label": "Electricity price forecasting"
+    },
+    {
+      "key": "renewable",
+      "label": "Renewable generation forecasting"
+    },
+    {
+      "key": "load",
+      "label": "Load forecasting"
+    },
+    {
+      "key": "foundation",
+      "label": "Time series foundation models"
+    }
+  ]
+}
