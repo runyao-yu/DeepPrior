@@ -12,10 +12,11 @@
     "build:hero": "node scripts/build-triangle-scene.mjs",
     "check:content": "node scripts/check-content.mjs",
     "check:brand": "node scripts/check-brand.mjs",
-    "validate": "npm run build:covers && npm run check:content && npm run check:brand && npm run lint && npm run typecheck && npm run build",
+    "validate": "npm run build:covers && npm run check:content && npm run check:brand && npm run lint && npm run typecheck && npm run build:static",
     "build:market-data": "node scripts/build-market-engine-data.mjs",
     "patch:bundle": "python3 scripts/patch-site-bundle.py",
-    "build:covers": "node scripts/build-paper-covers.mjs"
+    "build:covers": "node scripts/build-paper-covers.mjs",
+    "build:static": "node scripts/build-static-site.mjs"
   },
   "engines": {
     "node": ">=20.9.0"

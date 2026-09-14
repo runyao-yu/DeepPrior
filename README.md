@@ -68,8 +68,22 @@ npm run validate
 
 The validation suite checks that legacy branding has not been reintroduced,
 validates the centralized content structure, runs ESLint and TypeScript, and
-creates a production build. To check only an edited content file, run
+builds the static site into `out/`. To check only an edited content file, run
 `npm run check:content`.
+
+## Deployment (GitHub Pages)
+
+The site is a pre-compiled static page (`public/` plus `public/mirror/index.html`),
+so hosting does not need the Next.js server. `.github/workflows/pages.yml` runs
+`npm run build:static` on every push to `main` and publishes `out/` with GitHub
+Pages (Settings → Pages → Source must be **GitHub Actions**).
+
+`scripts/build-static-site.mjs` copies `public/` to `out/`, places `index.html` at
+the root and, when the site lives under a sub-path (project site such as
+`https://<user>.github.io/DeepPrior/`), prefixes every root-absolute asset URL and
+`/#section` link with that base path (`SITE_BASE_PATH`, injected by the workflow).
+With a custom domain or a `<user>.github.io` repository the files are published
+unchanged. Set `SITE_CNAME=example.com` to emit a `CNAME` file for a custom domain.
 
 ## Project structure
 
